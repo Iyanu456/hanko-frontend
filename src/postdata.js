@@ -1,6 +1,6 @@
-async function postData(url, endpoint, data) {
+async function postData(url, data) {
 	try {
-	    const response = await fetch(url + endpoint, {
+	    const response = await fetch(url, {
 	    	method: 'POST',
 	      	headers: {
 	        	'Content-Type': 'application/json',
