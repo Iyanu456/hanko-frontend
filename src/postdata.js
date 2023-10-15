@@ -4,6 +4,7 @@ async function postData(url, data) {
 	    	method: 'POST',
 	      	headers: {
 	        	'Content-Type': 'application/json',
+            'Authorization': data.token,
 	      	},
 	      	body: JSON.stringify(data),
 	      	redirect: 'follow',
